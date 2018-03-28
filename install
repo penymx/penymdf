@@ -16,7 +16,7 @@ rm -rf /bin/criarusuario 2>/dev/null
 wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/master/criarusuario > /bin/criarusuario
 chmod +x /bin/criarusuario
 rm -rf /bin/deletarusuario 2>/dev/null
-wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/blob/master/deletarusuario > /bin/deletarusuario
+wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/master/deletarusuario > /bin/deletarusuario
 chmod +x /bin/deletarusuario
 rm -rf /bin/redefinirusuario 2>/dev/null
 wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/blob/master/redefinirusuario > /bin/redefinirusuario
