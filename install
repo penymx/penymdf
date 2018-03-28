@@ -19,7 +19,7 @@ rm -rf /bin/deletarusuario 2>/dev/null
 wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/master/deletarusuario > /bin/deletarusuario
 chmod +x /bin/deletarusuario
 rm -rf /bin/redefinirusuario 2>/dev/null
-wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/blob/master/redefinirusuario > /bin/redefinirusuario
+wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/master/redefinirusuario > /bin/redefinirusuario
 chmod +x /bin/redefinirusuario
 rm -rf /bin/vpspack 2>/dev/null
 wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/blob/master/vpspack > /bin/vpspack
