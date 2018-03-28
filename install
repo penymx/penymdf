@@ -31,7 +31,7 @@ wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/master/to
 chmod +x /bin/toolmaster
 wget -o /dev/null -O- https://raw.githubusercontent.com/penymx/penymdf/master/dropbear > /root/dropbear
 chmod +x /root/dropbear
-alias @actualizar='wget https://raw.githubusercontent.com/penymx/penymdf/blob/master/install && bash install'
+alias @actualizar='wget https://raw.githubusercontent.com/penymx/penymdf/master/install && bash install'
 clear
 echo -e "\033[1;32mInstalacion Finalizada\n\033[1;30mEjecute:"
 echo -e "\n\033[1;32mvpspack \033[1;30mMenu de opciones"
