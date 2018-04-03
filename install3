@@ -117,20 +117,6 @@ done | dialog --title 'Instalando...' --guage 'AGUARDE, INSTALANDO AS DEPENDENCI
 }
 
 instala () {
-#COLETA DE DADOS
-key=$(dialog --stdout --nocancel --inputbox 'DIGITE AGORA SUA KEY:' 6 80 )
-[[ "$?" -ne "0" ]] && return 1
-[[ $key = "" ]] && return 1
-#VERIFICANDO A KEY
-cd $HOME
-key[1]=$(echo "$key" | awk -F "?" '{print $2}')
-key[2]=$(echo "$key" | awk -F "?" '{print $1}')
-ofuscate_fun ${key[2]}
-wget -O lista http://$link_list/${key[1]}/lista -o /dev/null
-if [ "$(cat $HOME/lista | grep $link_list/${key[1]})" = "" ]; then
-dialog --title 'Erro!' --msgbox 'A KEY DIGITADA E INCORRETA!' 6 80
-return 1
-fi
 #INICIANDO PROCESSO
 sleep 5s | dialog  --title 'INICIANDO...' --infobox 'AGUARDE INICIANDO INSTALACAO' 4 80
 if [ -d /etc/adm-lite ]; then
